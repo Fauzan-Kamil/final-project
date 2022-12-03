@@ -4,7 +4,7 @@ import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 
 # Load the model
-model = pickle.load(open('irlandia_grid_knn.pkl', 'rb'))
+model = pd.read_pickle('irlandia_grid_knn.pkl')
 
 # Load the dataset
 df = pd.read_csv('Deploy.csv')
