@@ -3,8 +3,10 @@ import pickle
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 
+st.set_page_config(page_title="Irlandia - Churn Prediction")
+
 # Load the model
-model = pd.read_pickle('irlandia_grid_knn.pkl')
+model = pd.read_pickle('irlandia_grid_Knn.pkl')
 
 # Load the dataset
 df = pd.read_csv('Deploy.csv')
